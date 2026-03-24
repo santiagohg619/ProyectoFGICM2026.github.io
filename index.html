@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargando Proyecto...</title>
+    <!-- SEO Básico -->
+    <meta name="description" content="Página interactiva y moderna con rutas informativas y galerías dinámicas.">
+    <!-- Fuente moderna -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="./css_pagina_web.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar" id="inicio-nav">
+        <!-- El JS se encarga de rellenar el nombre de la marca -->
+        <div class="brand-name" id="logoName">Logo</div>
+        
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#informacion">Acerca de</a></li>
+            <li><a href="#galeria">Galería</a></li>
+        </ul>
+        
+        <button class="menu-btn" id="menuToggle">☰</button>
+    </nav>
+
+    <!-- SECCIÓN DE INICIO (HERO) -->
+    <header id="inicio" class="hero-section">
+        <!-- Elementos decorativos animados de fondo -->
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        
+        <div class="hero-content">
+            <!-- Textos llenados por JS para facil modificacion -->
+            <h1 id="heroTitle">Título</h1>
+            <p id="heroSubtitle">Subtítulo</p>
+            
+            <div class="hero-buttons">
+                <a href="#informacion" class="btn btn-primary">Descubrir Más</a>
+                <!-- Botón de interacción visual -->
+                <button id="interactiveBtn" class="btn btn-secondary">Probar Interacción</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE RUTAS / INFORMACIÓN -->
+    <section id="informacion">
+        <h2 class="section-title">Nuestros Pilares</h2>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon">🧠</div>
+                <h3>Inteligencia</h3>
+                <p>Estructuras dinámicas que responden a la necesidad del usuario con fluidez visual.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔒</div>
+                <h3>Seguridad Base</h3>
+                <p>Desarrollado bajo principios robustos listos para desplegarse mediante plataformas seguras.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <h3>Rendimiento</h3>
+                <p>Código limpio y eficiente utilizando exclusivamente HTML, CSS y JS.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE GALERÍA -->
+    <section id="galeria">
+        <h2 class="section-title">Galería Tecnológica</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800" alt="Conexión Global">
+                <div class="overlay"><span>Redes Globales</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" alt="Ciberseguridad">
+                <div class="overlay"><span>Sistemas de Seguridad</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" alt="Hardware">
+                <div class="overlay"><span>Hardware Avanzado</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL DE LA GALERÍA -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="expandedImg" alt="Imagen ampliada">
+        <div id="caption"></div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; <span id="year"></span> <span class="brand-footer">Logo</span>. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Archivo de JavaScript -->
+    <script src="./javascript_pagina_web.js"></script>
+</body>
+</html>
